@@ -17,7 +17,7 @@ import static com.bumptech.glide.Glide.with;
 
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/5/13
  * Time:10:27
  */

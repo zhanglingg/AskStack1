@@ -4,7 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/10
+ * Time:10:36
  */
 public class RegexUtils {
     /**
@@ -35,11 +37,7 @@ public class RegexUtils {
             Pattern regex = Pattern.compile(check);
             Matcher matcher = regex.matcher(handset);
             boolean isMatched = matcher.matches();
-            if (isMatched) {
-                return true;
-            } else {
-                return false;
-            }
+            return isMatched;
         } catch (RuntimeException e) {
             return false;
         }
@@ -65,10 +63,7 @@ public class RegexUtils {
     public static boolean isNumeric(String str) {
         Pattern pattern = Pattern.compile("[0-9]*");
         Matcher isNum = pattern.matcher(str);
-        if (!isNum.matches()) {
-            return false;
-        }
-        return true;
+        return isNum.matches();
     }
     /**
      * 判断是否为整数

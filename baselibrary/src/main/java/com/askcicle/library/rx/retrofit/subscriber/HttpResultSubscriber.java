@@ -6,7 +6,7 @@ import com.askcicle.library.rx.retrofit.HttpResult;
 import rx.Subscriber;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/27
  * Time:21:27
  */
@@ -37,8 +37,8 @@ public abstract class HttpResultSubscriber<T> extends Subscriber<HttpResult<T>> 
 
     @Override
     public void onNext(HttpResult<T> t) {
-        if (!t.error)
-            onSuccess(t.results);
+        if (0 == t.code)
+            onSuccess(t.data);
         else
             _onError(new Throwable("error=true"));
     }

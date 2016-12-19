@@ -12,7 +12,7 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/27
  * Time:15:23
  */
@@ -28,10 +28,6 @@ public class ServiceFactory {
                 .create();
         mOkHttpClient = OkHttpProvider.getDefaultOkHttpClient();
 
-    }
-
-    private static class SingletonHolder {
-        private static final ServiceFactory INSTANCE = new ServiceFactory();
     }
 
     public static ServiceFactory getInstance() {
@@ -62,6 +58,10 @@ public class ServiceFactory {
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
         return retrofit.create(serviceClass);
+    }
+
+    private static class SingletonHolder {
+        private static final ServiceFactory INSTANCE = new ServiceFactory();
     }
 
 

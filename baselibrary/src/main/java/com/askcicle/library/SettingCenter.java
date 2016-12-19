@@ -9,7 +9,7 @@ import java.io.File;
 
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/5/18
  * Time:21:54
  */
@@ -23,7 +23,7 @@ public class SettingCenter {
         PrefUtils.putBoolean(SolidApplication.getInstance(), "getOnlyWifiLoadImage", isEnable);
     }
 
-    // region 缓存相关
+    //region 缓存相关
 
     /**
      * 计算缓存大小

@@ -11,7 +11,9 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/7/22
+ * Time:17:50
  */
 public class JsonConvert<T> extends AbsConvert<T> {
 

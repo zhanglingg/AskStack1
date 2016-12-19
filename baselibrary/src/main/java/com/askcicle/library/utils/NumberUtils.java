@@ -1,7 +1,9 @@
 package com.askcicle.library.utils;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/10
+ * Time:10:12
  */
 public class NumberUtils {
     /**
@@ -25,6 +27,10 @@ public class NumberUtils {
     public NumberUtils(String mobile)
     {
         this.setMobile(mobile);
+    }
+
+    public String getMobile() {
+        return mobile;
     }
 
     public void setMobile(String mobile)
@@ -83,24 +89,9 @@ public class NumberUtils {
         }
     }
 
-    public String getMobile()
-    {
-        return mobile;
-    }
-
     public int getFacilitatorType()
     {
         return facilitatorType;
-    }
-
-    public boolean isLawful()
-    {
-        return isLawful;
-    }
-
-    public boolean isIs3G()
-    {
-        return is3G;
     }
 
     private void setFacilitatorType(int facilitatorType)
@@ -108,9 +99,19 @@ public class NumberUtils {
         this.facilitatorType = facilitatorType;
     }
 
+    public boolean isLawful()
+    {
+        return isLawful;
+    }
+
     private void setLawful(boolean isLawful)
     {
         this.isLawful = isLawful;
+    }
+
+    public boolean isIs3G()
+    {
+        return is3G;
     }
 
     private void setIs3G(boolean is3G)

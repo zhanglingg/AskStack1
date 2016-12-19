@@ -35,6 +35,7 @@ public class MainActivity extends BaseMainActivity {
 
     @Override
     protected void init(Bundle savedInstanceState) {
+
         super.init(savedInstanceState);
         mFragmentManager = getSupportFragmentManager();
         mCurrentFragment = (BaseFragment) mFragmentManager.findFragmentById(R.id.frame_content);
@@ -55,7 +56,7 @@ public class MainActivity extends BaseMainActivity {
     @Override
     protected void setUpView() {
 
-        mBottomNavigationView = $(R.id.bottom_navigation);
+        mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
 
         mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

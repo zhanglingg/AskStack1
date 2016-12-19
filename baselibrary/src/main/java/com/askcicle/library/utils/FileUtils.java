@@ -16,7 +16,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/4/20
+ * Time:15:01
  */
 public class FileUtils {
 

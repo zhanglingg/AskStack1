@@ -17,13 +17,16 @@ import okhttp3.ResponseBody;
 import rx.Subscriber;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/8/1
  * Time:16:40
  */
 public abstract class DownLoadSubscribe extends Subscriber<ResponseBody> {
 
     private static String TAG = "DownLoadSubscribe";
+    Handler handler = new Handler(Looper.getMainLooper());
+    long fileSizeDownloaded = 0;
+    long fileSize = 0;
     private String mSaveFilePath;
     private File mFile;
 
@@ -56,14 +59,10 @@ public abstract class DownLoadSubscribe extends Subscriber<ResponseBody> {
 
     public abstract void onProgress(double progress, long downloadByte, long totalByte);
 
-
     public File getFile() {
         return mFile;
     }
 
-    Handler handler = new Handler(Looper.getMainLooper());
-    long fileSizeDownloaded = 0;
-    long fileSize = 0;
     public boolean writeResponseBodyToDisk(ResponseBody body) {
         try {
             InputStream inputStream = null;

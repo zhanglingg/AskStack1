@@ -7,7 +7,9 @@ import android.net.Uri;
 import java.util.ArrayList;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/4/22
+ * Time:12:45
  */
 public class SystemShareUtils {
 

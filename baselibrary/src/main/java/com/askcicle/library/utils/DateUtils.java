@@ -7,7 +7,9 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- *Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/10
+ * Time:9:58
  */
 public class DateUtils {
     public static SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());

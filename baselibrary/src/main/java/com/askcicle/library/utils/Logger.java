@@ -5,7 +5,9 @@ import android.text.TextUtils;
 import android.util.Log;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/10
+ * Time:10:15
  */
 public class Logger {
 

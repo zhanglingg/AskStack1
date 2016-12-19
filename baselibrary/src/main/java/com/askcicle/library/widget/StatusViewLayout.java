@@ -13,7 +13,7 @@ import com.askcicle.library.R;
 
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/8
  * Time:10:36
  */

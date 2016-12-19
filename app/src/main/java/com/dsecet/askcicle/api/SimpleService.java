@@ -1,11 +1,14 @@
 package com.dsecet.askcicle.api;
 
+import com.askcicle.library.rx.retrofit.BaseResultVo;
 import com.askcicle.library.rx.retrofit.HttpResult;
+import com.dsecet.askcicle.mode.University;
 
-import java.util.List;
-
+import java.util.Map;
 
 import retrofit2.http.GET;
+import retrofit2.http.Headers;
+import retrofit2.http.QueryMap;
 import rx.Observable;
 
 
@@ -16,7 +19,7 @@ import rx.Observable;
  */
 public interface SimpleService {
 
-    String BASE_URL = "http://www.gank.io/api/";
+    String BASE_URL = "http://115.29.136.168/api/";
 
     /**
      * 获取发布干货的日期
@@ -24,6 +27,18 @@ public interface SimpleService {
      * @return
      */
     @GET("day/history")
-    Observable<HttpResult<List<String>>> getRecentlyDate();
+    Observable<HttpResult<String>> getRecentlyDate();
+
+    /**
+     * 获取发布干货的日期
+     *
+     * @return
+     */
+    @Headers("Content-Type: application/json")
+    @GET("organiztion/list")
+    Observable<HttpResult<BaseResultVo<University>>> getUniversitys(@QueryMap Map<String, Object> options);
+
+
+
 
 }

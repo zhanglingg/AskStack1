@@ -7,7 +7,7 @@ import com.askcicle.library.utils.json.JsonConvert;
 import rx.functions.Func1;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/28
  * Time:11:04
  */

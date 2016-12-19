@@ -5,7 +5,9 @@ import android.text.SpannableString;
 import android.text.style.TextAppearanceSpan;
 
 /**
- *  Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/18
+ * Time:17:10
  */
 public class StringStyleUtils {
     public static SpannableString format(Context context, String text, int style) {

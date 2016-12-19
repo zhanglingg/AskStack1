@@ -6,7 +6,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/4/18
+ * Time:16:17
  */
 public class CharsetUtils {
     public static String decodeUnicode(String str) {

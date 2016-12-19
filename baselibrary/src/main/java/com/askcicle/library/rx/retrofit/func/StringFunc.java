@@ -6,7 +6,7 @@ import okhttp3.ResponseBody;
 import rx.functions.Func1;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/27
  * Time:20:54
  */

@@ -8,7 +8,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *  Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/4/1
+ * Time:16:11
  */
 public class StringUtils {
 

@@ -15,17 +15,13 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/28
  * Time:9:22
  */
 public class ObservableProvider {
 
     private CommonService mCommonService;
-
-    private static class DefaultHolder {
-        private static ObservableProvider INSTANCE = new ObservableProvider();
-    }
 
     private ObservableProvider() {
         mCommonService = ServiceFactory.getInstance().createService(CommonService.class);
@@ -76,6 +72,10 @@ public class ObservableProvider {
                     }
                 });
 
+    }
+
+    private static class DefaultHolder {
+        private static ObservableProvider INSTANCE = new ObservableProvider();
     }
 
 

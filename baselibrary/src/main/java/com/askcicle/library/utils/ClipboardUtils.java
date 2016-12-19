@@ -6,7 +6,9 @@ import android.content.Context;
 import android.os.Build;
 
 /**
- *Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/4/22
+ * Time:11:45
  */
 public class ClipboardUtils {
     private static ClipboardManager mClipboardManager;

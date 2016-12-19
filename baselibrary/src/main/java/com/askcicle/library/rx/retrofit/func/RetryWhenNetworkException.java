@@ -10,7 +10,7 @@ import rx.functions.Func1;
 import rx.functions.Func2;
 
 /**
- * Created by lin
+ * Created by _SOLID
  * Date:2016/7/27
  * Time:21:38
  */

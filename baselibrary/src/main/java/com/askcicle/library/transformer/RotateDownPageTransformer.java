@@ -5,7 +5,11 @@ import android.view.View;
 
 import com.nineoldandroids.view.ViewHelper;
 
-
+/**
+ * Created by _SOLID
+ * Date:2016/8/10
+ * Time:16:41
+ */
 public class RotateDownPageTransformer implements ViewPager.PageTransformer {
 
     private static final float ROT_MAX = 20.0f;

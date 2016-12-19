@@ -1,7 +1,9 @@
 package com.askcicle.library.utils.json;
 
 /**
- * Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/13
+ * Time:11:39
  */
 public abstract class AbsConvert<T> {
 

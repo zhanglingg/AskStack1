@@ -17,7 +17,9 @@ import com.askcicle.library.R;
 
 
 /**
- *Created by lin on 2016-12-08.
+ * Created by _SOLID
+ * Date:2016/5/10
+ * Time:10:03
  */
 public class CommonUtils {
     /**
@@ -26,11 +28,8 @@ public class CommonUtils {
      * @return
      */
     public static boolean isExternalStorageExists() {
-        if (Environment.getExternalStorageState().equals(
-                Environment.MEDIA_MOUNTED)) {
-            return true;
-        }
-        return false;
+        return Environment.getExternalStorageState().equals(
+                Environment.MEDIA_MOUNTED);
     }
 
     public static void hideKeyboard(Activity activity) {
